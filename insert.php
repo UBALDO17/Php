@@ -21,6 +21,7 @@
     <div class="container">
         <br>
         <h2>Insert Data into MySQL</h2>
+        <br>
         <form action="insert.php" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>

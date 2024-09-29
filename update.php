@@ -34,6 +34,7 @@
     <div class="container">
         <br>
         <h2>Update Data into MySQL</h2>
+        <br>
         <form action="update.php?id_get=<?php echo $id;?>" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required value="<?php echo $row['name'];?>"><br><br>
