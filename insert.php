@@ -17,24 +17,25 @@
             <ion-title style="text-align:center;">CRUD APPLICATION IN PHP</ion-title>
         </ion-toolbar>
     </ion-header>
-    
+
     <div class="container">
-    <h2>Insert Data into MySQL</h2>
-    <form action="insert.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="course">Section:</label>
-        <input type="text" id="section" name="section" required><br><br>
+        <br>
+        <h2>Insert Data into MySQL</h2>
+        <form action="insert.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="course">Section:</label>
+            <input type="text" id="section" name="section" required><br><br>
 
-        <label for="course">Course:</label>
-        <input type="text" id="course" name="course" required><br><br>
-        
-        <input type="submit" value="Submit" class="btn btn-primary">
-    </form>
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course" required><br><br>
+            
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </form>
 
-    <hr>
-    <a href="index.php"><button class="btn btn-primary">Back to Homepage</button></a>
+        <hr>
+        <a href="index.php"><button class="btn btn-primary">Back to Homepage</button></a>
     </div>
 
 

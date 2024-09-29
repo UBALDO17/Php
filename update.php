@@ -32,6 +32,7 @@
     ?>
 
     <div class="container">
+        <br>
         <h2>Update Data into MySQL</h2>
         <form action="update.php?id_get=<?php echo $id;?>" method="post">
             <label for="name">Name:</label>
@@ -43,7 +44,7 @@
             <label for="course">Course:</label>
             <input type="text" id="course" name="course" required value="<?php echo $row['course'];?>"><br><br>
             
-            <input type="submit" value="Update">
+            <input type="submit" value="Update" class="btn btn-primary">
         </form>
 
         <hr>
