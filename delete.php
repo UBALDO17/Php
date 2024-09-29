@@ -19,7 +19,7 @@
             $result = mysqli_query($conn, $query);
 
             if ($result) {
-                echo "Successfully deleted!";                
+                echo "<script>window.location.href='index.php'</script>";                
             }
         }
     ?>
