@@ -28,7 +28,7 @@
             $section = $_POST["section"];
             $course = $_POST["course"];
 
-            $query = "insert into crud (name, section, course) values ('$name', '$section', '$course')";
+            $query = "insert into crud_db (name, section, course) values ('$name', '$section', '$course')";
             if ($conn ->query($query)) {
                 echo "Added Successfully";
             }

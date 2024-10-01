@@ -13,7 +13,7 @@
         if(isset($_GET["id"])){
             $id = $_GET["id"];
 
-            $query = "select * from crud where id = '$id'";
+            $query = "select * from crud_db where id = '$id'";
             $result = mysqli_query($conn, $query);
             $row = mysqli_fetch_assoc($result);
         }
@@ -43,7 +43,7 @@
             $section = $_POST["section"];
             $course = $_POST["course"];
 
-            $query = "update crud set name = '$name', section = '$section', course = '$course' where id = '$id'";
+            $query = "update crud_db set name = '$name', section = '$section', course = '$course' where id = '$id'";
 
             if ($conn ->query($query)) {
                 echo "Updated Successfully";
