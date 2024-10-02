@@ -1,10 +1,14 @@
 <?php
-    $conn = new mysqli("localhost", "root", "", "php_practice");
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "stud";
 
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn ->connect_error);
-    } else {
-        // echo "Connected successfully";
-    }
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 ?>
