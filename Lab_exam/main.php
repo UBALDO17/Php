@@ -24,11 +24,15 @@
             <th>Last Name</th>
             <th>Date of Birth</th>
             <th>Section</th>
+            <th>Subject Title</th>
+            <th>Subject Description</th>
+            <th>Instructor</th>
+            <th>Date of Enrollment</th>
             <th>Actions</th>
         </tr>
         <?php
             include("conn.php");
-            $query = "SELECT * FROM students";
+            $query = "SELECT stu.*, sub.*, enr.* FROM students stu, subjects sub, enrollment enr WHERE stu.student_id = enr.student_id AND sub.subject_id = enr.subject_id";
             $result = ($conn ->query($query));
             while ($row = mysqli_fetch_assoc($result)) {
                 ?>
@@ -38,6 +42,10 @@
                         <td><?php echo $row['last_name']?></td>
                         <td><?php echo $row['date_of_birth']?></td>
                         <td><?php echo $row['section']?></td>
+                        <td><?php echo $row['subject_title']?></td>
+                        <td><?php echo $row['subject_desc']?></td>
+                        <td><?php echo $row['instructor']?></td>
+                        <td><?php echo $row['date_of_enrollment']?></td>
                         <td><a href="update.php?id=<?php echo $row['student_id']?>">Update</a> <a href="delete.php?id=<?php echo $row['student_id']?>">Delete</a></td>
                     </tr>
                 <?php
